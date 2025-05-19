@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+podman run \
+  --rm \
+  -it \
+  -v "${PWD}:/app:Z" \
+  -w "/app" \
+  -p "8080:8080" \
+  docker.io/library/node:latest \
+  bash

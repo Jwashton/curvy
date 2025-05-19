@@ -36,3 +36,5 @@ export const findC1 = function findC1(s, e, g_1, g_2, t_1, t_2) {
 export const findC2 = function findC2(s, e, g, t, c_1) {
   return (g - s * A(t) - c_1 * B(t) - e * D(t)) / C(t);
 };
+
+export default { A, B, C, D, g, findC1, findC2 };
